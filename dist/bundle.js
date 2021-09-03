@@ -39,7 +39,7 @@ var Img = function Img(props) {
     id: "main_book_left"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "book-img",
-    src: props.src
+    src: props.imageSrc
   }));
 };
 
@@ -64,54 +64,6 @@ var Link = function Link(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Link);
-
-/***/ }),
-
-/***/ "./src/components/Show.js":
-/*!********************************!*\
-  !*** ./src/components/Show.js ***!
-  \********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Explanation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Explanation */ "./src/components/Explanation.js");
-/* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Img */ "./src/components/Img.js");
-/* harmony import */ var _ShowTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ShowTable */ "./src/components/ShowTable.js");
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-var Show = function Show() {
-  var _book;
-
-  var book = (_book = {
-    title: "ワンピース",
-    price: 410,
-    author1: "尾田栄一郎",
-    author2: "",
-    author3: "",
-    publishedDate: 1997,
-    smallThumbnail: "http://books.google.com/books/content?id=z3k2AQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-    thumbnail: "http://books.google.com/books/content?id=z3k2AQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-  }, _defineProperty(_book, "publishedDate", 1997), _defineProperty(_book, "publisher", "集英社"), _defineProperty(_book, "pageCount", 207), _defineProperty(_book, "listPrice", 410), _defineProperty(_book, "isbn_10", "4088725093"), _defineProperty(_book, "ISBN_13", "9784088725093"), _defineProperty(_book, "description", "Young Monkey D. Luffy searches the oceans with his Straw Hat Pirates for the world's ultimate treasure, known as One Piece, in order to become the next Pirate King."), _defineProperty(_book, "infoLink", "http://books.google.co.jp/books?id=D8BvtAEACAAJ&dq=4088725093&hl=&source=gbs_api"), _book);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "book_main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Book \u8A73\u7D30\u30DA\u30FC\u30B8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, book.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Img__WEBPACK_IMPORTED_MODULE_2__.default, {
-    src: book.thumbnail
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "main_book_right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "\u5546\u54C1\u60C5\u5831"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ShowTable__WEBPACK_IMPORTED_MODULE_3__.default, {
-    book: book
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Explanation__WEBPACK_IMPORTED_MODULE_1__.default, {
-    description: book.description
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Show);
 
 /***/ }),
 
@@ -210,6 +162,54 @@ var TextP = function TextP(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (TextP);
+
+/***/ }),
+
+/***/ "./src/views/book/Show.js":
+/*!********************************!*\
+  !*** ./src/views/book/Show.js ***!
+  \********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_Explanation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Explanation */ "./src/components/Explanation.js");
+/* harmony import */ var _components_Img__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Img */ "./src/components/Img.js");
+/* harmony import */ var _components_ShowTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/ShowTable */ "./src/components/ShowTable.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+var Show = function Show() {
+  var _book;
+
+  var book = (_book = {
+    title: "ワンピース",
+    price: 410,
+    author1: "尾田栄一郎",
+    author2: "",
+    author3: "",
+    publishedDate: 1997,
+    smallThumbnail: "http://books.google.com/books/content?id=z3k2AQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    thumbnail: "http://books.google.com/books/content?id=z3k2AQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  }, _defineProperty(_book, "publishedDate", 1997), _defineProperty(_book, "publisher", "集英社"), _defineProperty(_book, "pageCount", 207), _defineProperty(_book, "listPrice", 410), _defineProperty(_book, "isbn_10", "4088725093"), _defineProperty(_book, "ISBN_13", "9784088725093"), _defineProperty(_book, "description", "Young Monkey D. Luffy searches the oceans with his Straw Hat Pirates for the world's ultimate treasure, known as One Piece, in order to become the next Pirate King."), _defineProperty(_book, "infoLink", "http://books.google.co.jp/books?id=D8BvtAEACAAJ&dq=4088725093&hl=&source=gbs_api"), _book);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "book_main"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Book \u8A73\u7D30\u30DA\u30FC\u30B8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, book.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Img__WEBPACK_IMPORTED_MODULE_2__.default, {
+    imageSrc: book.thumbnail
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "main_book_right"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "\u5546\u54C1\u60C5\u5831"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_ShowTable__WEBPACK_IMPORTED_MODULE_3__.default, {
+    book: book
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Explanation__WEBPACK_IMPORTED_MODULE_1__.default, {
+    description: book.description
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Show);
 
 /***/ }),
 
@@ -30072,7 +30072,7 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _components_Show__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Show */ "./src/components/Show.js");
+/* harmony import */ var _views_book_Show__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/book/Show */ "./src/views/book/Show.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30141,7 +30141,7 @@ var Clock = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Hello, world!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "It is ", this.state.date.toLocaleTimeString(), ".")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Show__WEBPACK_IMPORTED_MODULE_2__.default, null));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Hello, world!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "It is ", this.state.date.toLocaleTimeString(), ".")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_views_book_Show__WEBPACK_IMPORTED_MODULE_2__.default, null));
     }
   }]);
 

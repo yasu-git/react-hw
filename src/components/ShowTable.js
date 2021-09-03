@@ -1,6 +1,8 @@
 import React from 'react'
-import TableTb from './TableTb';
 import Link from './Link';
+import TableTh from './TableTh';
+import TableTr from './TableTr';
+
 
 const ShowTable = (props) => {
 
@@ -12,7 +14,7 @@ const ShowTable = (props) => {
 
     //textに追加するモノがあれば追加して返す関数
     function textAdd(text, value) {
-        if (value === null) {
+        if (value === null || value === null) {
             return text;
         }
         return text + " " + value;
@@ -32,36 +34,19 @@ const ShowTable = (props) => {
         <>
             <table>
                 <tbody>
+                    <TableTr thValue="著者" tbValue={textCheck(resultAuthors(
+                        props.book.author1,//第1著者
+                        props.book.author2,//第2著者
+                        props.book.author3//第3著者
+                    ))}
+                    />
+                    <TableTr thValue="発売日" tbValue={textCheck(props.book.publishedDate)} />
+                    <TableTr thValue="出版社" tbValue={textCheck(props.book.publisher)} />
+                    <TableTr thValue="ページ数" tbValue={textCheck(props.book.pageCount)} />
+                    <TableTr thValue="定価" tbValue={textCheck(props.book.listPrice)} />
+                    <TableTr thValue="ISBNコード" tbValue={textCheck(props.book.isbn_10)} />
                     <tr>
-                        <th>著者</th>
-                        <TableTb value={textCheck(resultAuthors(
-                            props.book.author1,//第1著者
-                            props.book.author2,//第2著者
-                            props.book.author3//第3著者
-                        ))} />
-                    </tr>
-                    <tr>
-                        <th>発売日</th>
-                        <TableTb value={textCheck(props.book.publishedDate)} />
-                    </tr>
-                    <tr>
-                        <th>出版社</th>
-                        <TableTb value={textCheck(props.book.publisher)} />
-                    </tr>
-                    <tr>
-                        <th>ページ数</th>
-                        <TableTb value={textCheck(props.book.pageCount)} />
-                    </tr>
-                    <tr>
-                        <th>定価</th>
-                        <TableTb value={textCheck(props.book.listPrice)} />
-                    </tr>
-                    <tr>
-                        <th>ISBNコード</th>
-                        <TableTb value={textCheck(props.book.isbn_10)} />
-                    </tr>
-                    <tr>
-                        <th>販売サイト</th>
+                        <TableTh text="販売サイト" />
                         <Link Link={props.book.infoLink} />
                     </tr>
                 </tbody>
