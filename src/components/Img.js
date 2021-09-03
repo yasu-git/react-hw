@@ -5,7 +5,7 @@ const Img = (props) => {
 
         <div id="main_book_left">
             <img alt="book-img"
-                src={props.src} />
+                src={props.imageSrc} />
         </div>
 
     )

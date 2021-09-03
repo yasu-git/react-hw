@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./components/Show";
-import Show from './components/Show';
+import "./views/book/Show";
+import Show from './views/book/Show';
 
 
 

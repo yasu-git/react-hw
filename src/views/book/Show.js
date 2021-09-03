@@ -1,7 +1,7 @@
 import React from 'react';
-import Explanation from './Explanation';
-import Img from './Img';
-import ShowTable from './ShowTable';
+import Explanation from '../../components/Explanation';
+import Img from '../../components/Img';
+import ShowTable from '../../components/ShowTable';
 
 const Show = () => {
 
@@ -33,7 +33,7 @@ const Show = () => {
             <hr />
             <br />
             <br />
-            <Img src={book.thumbnail} />
+            <Img imageSrc={book.thumbnail} />
             <div id="main_book_right">
                 <h3>商品情報</h3>
                 <hr />
