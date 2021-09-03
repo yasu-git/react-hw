@@ -2,217 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/components/Explanation.js":
-/*!***************************************!*\
-  !*** ./src/components/Explanation.js ***!
-  \***************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _TextP__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TextP */ "./src/components/TextP.js");
-
-
-
-var Explanation = function Explanation(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "\u8AAC\u660E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TextP__WEBPACK_IMPORTED_MODULE_1__.default, {
-    text: props.description
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Explanation);
-
-/***/ }),
-
-/***/ "./src/components/Img.js":
-/*!*******************************!*\
-  !*** ./src/components/Img.js ***!
-  \*******************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-var Img = function Img(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "main_book_left"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    alt: "book-img",
-    src: props.src
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Img);
-
-/***/ }),
-
-/***/ "./src/components/Link.js":
-/*!********************************!*\
-  !*** ./src/components/Link.js ***!
-  \********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-var Link = function Link(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: props.Link
-  }, "Google Play")));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Link);
-
-/***/ }),
-
-/***/ "./src/components/Show.js":
-/*!********************************!*\
-  !*** ./src/components/Show.js ***!
-  \********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Explanation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Explanation */ "./src/components/Explanation.js");
-/* harmony import */ var _Img__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Img */ "./src/components/Img.js");
-/* harmony import */ var _ShowTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ShowTable */ "./src/components/ShowTable.js");
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-var Show = function Show() {
-  var _book;
-
-  var book = (_book = {
-    title: "ワンピース",
-    price: 410,
-    author1: "尾田栄一郎",
-    author2: "",
-    author3: "",
-    publishedDate: 1997,
-    smallThumbnail: "http://books.google.com/books/content?id=z3k2AQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-    thumbnail: "http://books.google.com/books/content?id=z3k2AQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-  }, _defineProperty(_book, "publishedDate", 1997), _defineProperty(_book, "publisher", "集英社"), _defineProperty(_book, "pageCount", 207), _defineProperty(_book, "listPrice", 410), _defineProperty(_book, "isbn_10", "4088725093"), _defineProperty(_book, "ISBN_13", "9784088725093"), _defineProperty(_book, "description", "Young Monkey D. Luffy searches the oceans with his Straw Hat Pirates for the world's ultimate treasure, known as One Piece, in order to become the next Pirate King."), _defineProperty(_book, "infoLink", "http://books.google.co.jp/books?id=D8BvtAEACAAJ&dq=4088725093&hl=&source=gbs_api"), _book);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "book_main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "Book \u8A73\u7D30\u30DA\u30FC\u30B8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, book.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Img__WEBPACK_IMPORTED_MODULE_2__.default, {
-    src: book.thumbnail
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "main_book_right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "\u5546\u54C1\u60C5\u5831"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ShowTable__WEBPACK_IMPORTED_MODULE_3__.default, {
-    book: book
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Explanation__WEBPACK_IMPORTED_MODULE_1__.default, {
-    description: book.description
-  })));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Show);
-
-/***/ }),
-
-/***/ "./src/components/ShowTable.js":
-/*!*************************************!*\
-  !*** ./src/components/ShowTable.js ***!
-  \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _TableTb__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TableTb */ "./src/components/TableTb.js");
-/* harmony import */ var _Link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Link */ "./src/components/Link.js");
-
-
-
-
-var ShowTable = function ShowTable(props) {
-  function textCheck(text) {
-    if (text === "") return "情報なし";
-    return text;
-  } //textに追加するモノがあれば追加して返す関数
-
-
-  function textAdd(text, value) {
-    if (value === null) {
-      return text;
-    }
-
-    return text + " " + value;
-  } //著者を1名から3名の間追加して返す
-
-
-  function resultAuthors(author1, author2, author3) {
-    var resultAuthors = '';
-    resultAuthors = textAdd(resultAuthors, author1);
-    resultAuthors = textAdd(resultAuthors, author2);
-    resultAuthors = textAdd(resultAuthors, author3);
-    return resultAuthors;
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tbody", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u8457\u8005"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TableTb__WEBPACK_IMPORTED_MODULE_1__.default, {
-    value: textCheck(resultAuthors(props.book.author1, //第1著者
-    props.book.author2, //第2著者
-    props.book.author3 //第3著者
-    ))
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u767A\u58F2\u65E5"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TableTb__WEBPACK_IMPORTED_MODULE_1__.default, {
-    value: textCheck(props.book.publishedDate)
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u51FA\u7248\u793E"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TableTb__WEBPACK_IMPORTED_MODULE_1__.default, {
-    value: textCheck(props.book.publisher)
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u30DA\u30FC\u30B8\u6570"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TableTb__WEBPACK_IMPORTED_MODULE_1__.default, {
-    value: textCheck(props.book.pageCount)
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u5B9A\u4FA1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TableTb__WEBPACK_IMPORTED_MODULE_1__.default, {
-    value: textCheck(props.book.listPrice)
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "ISBN\u30B3\u30FC\u30C9"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TableTb__WEBPACK_IMPORTED_MODULE_1__.default, {
-    value: textCheck(props.book.isbn_10)
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("th", null, "\u8CA9\u58F2\u30B5\u30A4\u30C8"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Link__WEBPACK_IMPORTED_MODULE_2__.default, {
-    Link: props.book.infoLink
-  })))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ShowTable);
-
-/***/ }),
-
-/***/ "./src/components/TableTb.js":
-/*!***********************************!*\
-  !*** ./src/components/TableTb.js ***!
-  \***********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-var TableTb = function TableTb(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("tb", null, props.value));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (TableTb);
-
-/***/ }),
-
-/***/ "./src/components/TextP.js":
-/*!*********************************!*\
-  !*** ./src/components/TextP.js ***!
-  \*********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-var TextP = function TextP(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, props.text));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (TextP);
-
-/***/ }),
-
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -30072,7 +29861,6 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _components_Show__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Show */ "./src/components/Show.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30094,8 +29882,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
 
 
 
@@ -30141,7 +29927,7 @@ var Clock = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Hello, world!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "It is ", this.state.date.toLocaleTimeString(), ".")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Show__WEBPACK_IMPORTED_MODULE_2__.default, null));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "Hello, world!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "It is ", this.state.date.toLocaleTimeString(), "."));
     }
   }]);
 

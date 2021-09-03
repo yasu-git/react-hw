@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./components/Show";
+import Show from './components/Show';
 
 
 
@@ -29,9 +31,13 @@ class Clock extends React.Component {
     render() {
         return (
             <div>
-                <h1>Hello, world!</h1>
-                <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+                <div>
+                    <h1>Hello, world!</h1>
+                    <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+                </div>
+                <Show />
             </div>
+
         );
     }
 }
